@@ -1,16 +1,15 @@
 import "./App.css";
 import Espacios from '../public/components/ui/espacios';
-import Tabla from '../public/components/ui/tabla';
 import Menu from '../public/components/ui/header';
+import Proceso from '../public/components/ui/proceso';
+import { MatrixProvider } from '../public/components/ui/context';
 function App() {
   return (
-
+    <MatrixProvider>
     <div>
       <Menu />
-      <div className="App">
-        <Espacios />
-      </div>
     </div>
+    </MatrixProvider>
   );
 }
 
